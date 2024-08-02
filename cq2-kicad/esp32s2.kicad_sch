@@ -5,8 +5,13 @@
 	(uuid "8fdefc19-c89b-428e-a942-8a4b1c27c8f0")
 	(paper "A4")
 	(title_block
-		(date "2024-07-17")
+		(title "CQ2")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols
 		(symbol "-power:PWR_FLAG"
@@ -7344,16 +7349,6 @@
 		)
 		(uuid "63ffc516-91f1-41cc-8ebb-963e6ec468ce")
 	)
-	(text "Manfred Schmitz"
-		(exclude_from_sim no)
-		(at 198.12 190.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "94a3e41b-3cb6-4173-8a2b-4ba2e91e41cc")
-	)
 	(text "GPIO45\nL = VDD_SPI = 3.3 V = default\nH = VDD_SPI = 1.8 V"
 		(exclude_from_sim no)
 		(at 201.93 38.354 0)
@@ -9356,15 +9351,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 90.17 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "79518ac9-b0eb-4d71-8d64-06bc17ca7006")
 		)
@@ -9550,15 +9536,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 128.27 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 128.27 53.34 0)
 			(effects
 				(font
@@ -9760,15 +9737,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 194.31 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "dfa950ca-d954-4ea8-a339-6d83e585a55b")
 		)
@@ -9954,15 +9922,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 67.31 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 67.31 27.94 0)
 			(effects
 				(font
@@ -10164,15 +10123,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 118.11 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "0b9e2dd8-4987-4827-85ea-94c314715d89")
 		)
@@ -10366,15 +10316,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 120.65 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "5ab95231-305c-4f1d-aa5a-87974cb9f1c8")
 		)
@@ -10403,7 +10344,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "1b15fd85-bedf-4c69-b719-44a9ae2fe320")
 		(property "Reference" "C109"
@@ -10560,15 +10501,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 185.42 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 185.42 129.54 0)
 			(effects
 				(font
@@ -10768,15 +10700,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 189.23 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "f999c9c5-9415-468d-969c-e0f469cd4799")
 		)
@@ -10961,15 +10884,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 128.27 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 128.27 63.5 0)
 			(effects
 				(font
@@ -11171,15 +11085,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 99.06 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "78e067f2-f103-4a6c-bd67-8730d7ebd2d9")
 		)
@@ -11362,15 +11267,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 189.23 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 189.23 55.88 0)
 			(effects
 				(font
@@ -11578,15 +11474,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 58.42 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "56452ce7-7edf-47bf-b6c8-69636805ab8a")
 		)
@@ -11780,15 +11667,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 162.56 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "e03ea784-233a-459c-a3eb-735f2463f0ed")
 		)
@@ -11973,15 +11851,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 48.26 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 48.26 27.94 0)
 			(effects
 				(font
@@ -12189,15 +12058,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 58.42 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "104f46f7-3d70-4d83-b849-535dc4518399")
 		)
@@ -12226,7 +12086,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "581c7cc5-db13-4827-9016-1e9a2d005e62")
 		(property "Reference" "C108"
@@ -12383,15 +12243,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 173.99 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 173.99 129.54 0)
 			(effects
 				(font
@@ -12582,15 +12433,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 179.07 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 179.07 106.68 0)
 			(effects
 				(font
@@ -12798,15 +12640,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 133.35 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "81a8feb4-8af0-4221-8fc9-3c422db4aa2d")
 		)
@@ -12992,15 +12825,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 111.76 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 111.76 149.86 0)
 			(effects
 				(font
@@ -13199,15 +13023,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 179.07 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "51dbd2b5-2ee0-4b73-8681-b8d39fd34ee6")
 		)
@@ -13390,15 +13205,6 @@
 			)
 		)
 		(property "Outline" ""
-			(at 113.03 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 113.03 45.72 0)
 			(effects
 				(font
@@ -13603,15 +13409,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 36.83 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "2ada30e2-bbcc-471a-8e22-adf9c63dcf9b")
 		)
@@ -13797,15 +13594,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 25.4 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 25.4 27.94 0)
 			(effects
 				(font
@@ -14076,15 +13864,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 80.01 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "3c134cbe-a9f2-4b5c-9a74-658a7835e8a8")
 		)
@@ -14278,15 +14057,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 64.77 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "39564a91-3b36-46b8-8c8b-5122459a2c4d")
 		)
@@ -14472,15 +14242,6 @@
 			)
 		)
 		(property "Outline" "SMT SOIC-8"
-			(at 134.62 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 134.62 172.72 0)
 			(effects
 				(font
@@ -14700,15 +14461,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 152.4 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "d5319125-851f-43aa-93b8-c4f685d79432")
 		)
@@ -14899,15 +14651,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 179.07 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "aa0166b9-1e7f-4a20-a94d-7f016b8b6852")
 		)
@@ -15090,15 +14833,6 @@
 			)
 		)
 		(property "Outline" "SMT QFN56+17x7"
-			(at 135.89 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 135.89 102.87 0)
 			(effects
 				(font
@@ -15461,15 +15195,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 140.97 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "2a396853-a04d-4319-a4e9-6a595f5ab413")
 		)
@@ -15667,15 +15392,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 189.23 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "1a4e5646-0755-4dbc-ac44-b84f45fbae53")
 		)
@@ -15861,15 +15577,6 @@
 			)
 		)
 		(property "Outline" "SMT SOIC-8"
-			(at 63.5 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 63.5 172.72 0)
 			(effects
 				(font
@@ -16086,15 +15793,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 179.07 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "c657b695-fcbf-437e-a4ed-c03de1ba47ac")
 		)
@@ -16286,15 +15984,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 189.23 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "6dcada06-555e-4c08-88c0-0214159d6bfb")
 		)
@@ -16477,15 +16166,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 179.07 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 179.07 111.76 0)
 			(effects
 				(font
@@ -16758,15 +16438,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 78.74 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "5bc84ed0-49d9-4e11-8636-99fffb7f300d")
 		)
@@ -16950,15 +16621,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 157.48 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 157.48 142.24 0)
 			(effects
 				(font

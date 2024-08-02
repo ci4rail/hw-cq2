@@ -6,8 +6,14 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-17")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "Isolated Foreward Pre-Regulator")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "2024-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols
 		(symbol "ci4rail-database:capacitors/23"
@@ -9364,50 +9370,6 @@
 		)
 		(uuid "ff39e0bc-5f52-479a-8440-ce9f5d8aedf0")
 	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 190.5 193.802 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "29fa94aa-1ac9-43c8-a103-dcadaa9c245a")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 237.998 193.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2e599d99-d4a7-4da5-af0f-8a513f17b7ff")
-	)
-	(text "Isolated Foreward Pre-Regulator"
-		(exclude_from_sim no)
-		(at 190.246 187.198 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "373e9e3a-268b-4e39-838b-485e8a5cbe93")
-	)
-	(text "2024-07-03"
-		(exclude_from_sim no)
-		(at 237.998 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4177e196-8e7b-4b7e-a035-b14448979925")
-	)
 	(text "40V Under Voltage Lock Out\n60V Over Voltage Shutdown"
 		(exclude_from_sim no)
 		(at 59.944 42.418 0)
@@ -9418,17 +9380,6 @@
 		)
 		(uuid "4d04f028-abc7-4e23-b695-035c83d0263a")
 	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 268.605 192.532 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "59aefa44-7c90-43a2-a476-4badc1008701")
-	)
 	(text "Tap \n= Tpa\n= 45ns"
 		(exclude_from_sim no)
 		(at 66.548 101.854 0)
@@ -9438,17 +9389,6 @@
 			)
 		)
 		(uuid "8548cecd-205f-4dfc-8d1e-d9690c6b0396")
-	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 190.5 191.262 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9617e210-299e-4dca-bccd-36d620ebb23f")
 	)
 	(text "f = 215kHz"
 		(exclude_from_sim no)

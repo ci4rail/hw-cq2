@@ -6,8 +6,14 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-17")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "PSU Control")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "2024-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols)
 	(wire
@@ -520,17 +526,6 @@
 		)
 		(uuid "f7717a30-456f-4962-a9ad-2ee56be09a18")
 	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 190.246 191.262 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b6a4184-47c3-4b01-a111-c392c6620174")
-	)
 	(text "Functional Isolation"
 		(exclude_from_sim no)
 		(at 116.84 68.58 0)
@@ -542,17 +537,6 @@
 		)
 		(uuid "2604340e-7ccd-48a2-98cd-c69e8ad46375")
 	)
-	(text "Controlled PSU"
-		(exclude_from_sim no)
-		(at 190.246 187.452 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "52826a27-3049-41aa-9be4-dd7e72871e7f")
-	)
 	(text "Functional Isolation"
 		(exclude_from_sim no)
 		(at 159.766 122.174 0)
@@ -563,50 +547,6 @@
 			(justify left bottom)
 		)
 		(uuid "5ab502ea-ac7f-4e7a-ac88-0232ac8bb939")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 190.246 193.802 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8957bb4a-93af-4285-b21f-3a9012bb2eb9")
-	)
-	(text "2024-07-03"
-		(exclude_from_sim no)
-		(at 237.744 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8ec78da4-fd0f-4f0f-8c47-421b7915f596")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 237.744 193.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c4e5bfd9-fca3-41d5-8c6f-44b26d1ceb6e")
-	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 268.351 192.532 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "d12e9527-1754-4d70-a056-2a64498e3451")
 	)
 	(label "+3V3"
 		(at 172.72 59.69 0)

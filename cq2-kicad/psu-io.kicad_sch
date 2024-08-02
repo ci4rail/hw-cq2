@@ -6,8 +6,14 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-17")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "SPI based isolated AD/DA Converter")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "2024-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols
 		(symbol "ci4rail-database:capacitors/86"
@@ -1662,7 +1668,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "IC1"
+			(property "Reference" "U?"
 				(at 0 19.05 0)
 				(effects
 					(font
@@ -1698,7 +1704,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Analog DAC - SMT"
+			(property "Description" "Analog DAC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1806,7 +1812,7 @@
 					(hide yes)
 				)
 			)
-			(property "Lifecycle" "review pending CQ2"
+			(property "Lifecycle" "ERP1 pending CQ2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1815,7 +1821,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" ""
+			(property "Outline" "SMT WSON10"
 				(at 0 0 0)
 				(effects
 					(font
@@ -7123,50 +7129,6 @@
 		)
 		(uuid "13a20bdf-495b-440f-9248-95fab9a73735")
 	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 269.875 192.405 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "164a63d8-6986-4c42-ae48-5bd936e00073")
-	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 191.77 191.135 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2eee9dfa-4f67-400e-8e08-4144c80e4488")
-	)
-	(text "2024-07-03"
-		(exclude_from_sim no)
-		(at 237.998 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4847882d-4e2f-4b6e-8fe4-ee50ee41fcd4")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 238.252 193.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8772db14-716f-4b95-8df3-81cd7e506bb2")
-	)
 	(text "-1.2V"
 		(exclude_from_sim no)
 		(at 200.152 38.608 0)
@@ -7176,28 +7138,6 @@
 			)
 		)
 		(uuid "92b94f72-a7da-4669-982f-eae07beb865b")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 191.77 193.675 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cb1c7c3c-eda7-4558-bbb9-a04382609593")
-	)
-	(text "SPI based isolated AD/DA Converter"
-		(exclude_from_sim no)
-		(at 187.706 187.198 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d73a193f-ef7d-4a0a-ac5d-de3b1367ec29")
 	)
 	(label "+3V3_ISO_D"
 		(at 106.68 140.97 0)
@@ -8371,7 +8311,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "251655ed-10ef-4d5f-af7a-24bd1bb0147f")
-		(property "Reference" "IC1"
+		(property "Reference" "U43"
 			(at 247.65 105.1913 0)
 			(effects
 				(font
@@ -8407,7 +8347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Analog DAC - SMT"
+		(property "Description" "Analog DAC"
 			(at 247.65 127 0)
 			(effects
 				(font
@@ -8514,7 +8454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecycle" "review pending CQ2"
+		(property "Lifecycle" "ERP1 pending CQ2"
 			(at 247.65 127 0)
 			(effects
 				(font
@@ -8523,7 +8463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT WSON10"
 			(at 247.65 127 0)
 			(effects
 				(font
@@ -8565,11 +8505,11 @@
 		(instances
 			(project "cq2"
 				(path "/b7250307-01ed-4101-9d2a-e447f7e762c6/3fc2b017-f168-44ab-b635-d30322457b0e/1495dad5-83ea-4609-804f-2940cadedc39"
-					(reference "IC1")
+					(reference "U43")
 					(unit 1)
 				)
 				(path "/b7250307-01ed-4101-9d2a-e447f7e762c6/699e04ef-9f87-46ae-839a-2e051ef22e36/1495dad5-83ea-4609-804f-2940cadedc39"
-					(reference "IC2")
+					(reference "U45")
 					(unit 1)
 				)
 			)

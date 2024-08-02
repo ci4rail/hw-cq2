@@ -6,8 +6,14 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-17")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "Output Switch")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "2024-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols
 		(symbol "ci4rail-database:discrete/31"
@@ -2535,72 +2541,6 @@
 			(type default)
 		)
 		(uuid "f52a4a9d-40c4-4379-b26d-0dfb645adb81")
-	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 268.859 192.278 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "2673ba0d-d42a-421f-800a-71e274a7ce79")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 238.252 193.294 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "67a43194-17dd-44ae-984e-d802172f8aee")
-	)
-	(text "2024-07-03"
-		(exclude_from_sim no)
-		(at 238.252 190.754 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6b394da0-0448-4cc6-ab1c-ad7de603e0a8")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 190.754 193.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "afda5e9a-4490-4e4b-bd1b-f7327dbd9374")
-	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 190.754 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b9aa61be-9a5e-4eb0-a57f-f6f8153b1625")
-	)
-	(text "Controlled PSU"
-		(exclude_from_sim no)
-		(at 190.754 187.198 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e7071696-8424-4f33-b758-645268d8f877")
 	)
 	(hierarchical_label "+3V3"
 		(shape input)

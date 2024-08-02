@@ -5,8 +5,15 @@
 	(uuid "d0b92108-60ce-413f-8072-38464d9a3c36")
 	(paper "A4")
 	(title_block
-		(date "2024-07-17")
+		(title "CQ2")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "PCIe Clock and PSU")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "2024-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols
 		(symbol "ci4rail-database:capacitors/86"
@@ -3005,16 +3012,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 68.58) (xy 245.11 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f237d56-e0f4-4e32-b31e-f6a91169c22d")
-	)
-	(wire
-		(pts
 			(xy 134.62 128.27) (xy 147.32 128.27)
 		)
 		(stroke
@@ -3252,6 +3249,16 @@
 			(type default)
 		)
 		(uuid "3f764d0c-fe59-46ff-be00-250ca5929151")
+	)
+	(wire
+		(pts
+			(xy 240.03 101.6) (xy 245.11 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4059b241-df3e-4ebe-b6b4-67e904d2ab80")
 	)
 	(wire
 		(pts
@@ -3525,6 +3532,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 68.58) (xy 245.11 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "654a3b8a-8e18-4e7c-b24b-0bef73c1e3a8")
+	)
+	(wire
+		(pts
 			(xy 226.06 74.93) (xy 234.95 74.93)
 		)
 		(stroke
@@ -3532,6 +3549,16 @@
 			(type default)
 		)
 		(uuid "66c048a1-6f4b-451c-8e34-03ed6b7e366c")
+	)
+	(wire
+		(pts
+			(xy 240.03 95.25) (xy 245.11 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6780358f-9816-4287-b901-e990ab4a62e2")
 	)
 	(wire
 		(pts
@@ -3715,16 +3742,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 95.25) (xy 245.11 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9557c136-1937-4433-9b84-61c3e79ef6ef")
-	)
-	(wire
-		(pts
 			(xy 209.55 148.59) (xy 213.36 148.59)
 		)
 		(stroke
@@ -3885,6 +3902,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 74.93) (xy 245.11 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c08770e6-cc0b-45cc-90e7-815e659b820f")
+	)
+	(wire
+		(pts
 			(xy 214.63 66.04) (xy 214.63 63.5)
 		)
 		(stroke
@@ -4015,16 +4042,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 74.93) (xy 245.11 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e42e66b8-8429-484c-96e6-2ace98d92520")
-	)
-	(wire
-		(pts
 			(xy 220.98 55.88) (xy 228.6 55.88)
 		)
 		(stroke
@@ -4052,16 +4069,6 @@
 			(type default)
 		)
 		(uuid "eb934718-d0c8-46e5-9dfb-da9da0b61139")
-	)
-	(wire
-		(pts
-			(xy 240.03 101.6) (xy 245.11 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eeddf4d9-626d-4ce2-8c85-5a817261d4be")
 	)
 	(wire
 		(pts
@@ -5441,28 +5448,6 @@
 			"JN8EQRAEQRAEUUKQfBMEQRAEQRBECUHyTRAEQRAEQRAlAvD/oyg+wR9CFlIAAAAASUVORK5CYII="
 		)
 	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 269.621 192.278 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "039765b1-08c7-43a6-a3c8-62ff59e976ea")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 237.744 193.675 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "03fb9fb8-e7b0-4bae-a5a9-24fd6042748d")
-	)
 	(text "pull-up elsewhere"
 		(exclude_from_sim no)
 		(at 226.314 123.444 0)
@@ -5472,28 +5457,6 @@
 			)
 		)
 		(uuid "05d17a88-5037-45ea-8b75-ca1236052ce0")
-	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 191.516 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "72376422-b94f-4236-90e8-8b238a3c308a")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 191.516 193.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d4d712c-b070-4b84-9909-6b08d0d3a25a")
 	)
 	(text "0.8V"
 		(exclude_from_sim no)
@@ -5514,28 +5477,6 @@
 			)
 		)
 		(uuid "9947fdda-78e6-4070-bd5d-560f3a84af7a")
-	)
-	(text "2024-07-03"
-		(exclude_from_sim no)
-		(at 237.744 191.135 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc03765d-03cf-4b52-b518-37e70f5a2336")
-	)
-	(text "PCIe Clock and PSU"
-		(exclude_from_sim no)
-		(at 191.516 187.198 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f5ae1bc8-821d-4ff1-a3b4-eb43cd07673a")
 	)
 	(label "GND"
 		(at 132.08 55.88 0)
@@ -5636,6 +5577,30 @@
 		)
 		(uuid "f04d6fde-5479-48e6-8cfd-98b690c20a1c")
 	)
+	(hierarchical_label "PECLK+"
+		(shape output)
+		(at 245.11 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3e97bdff-3858-416e-8618-a3ea72034baa")
+	)
+	(hierarchical_label "BR1_CLK-"
+		(shape output)
+		(at 245.11 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "474f05da-d64c-465b-92e6-ed2167e82d41")
+	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 134.62 156.21 180)
@@ -5662,7 +5627,7 @@
 	)
 	(hierarchical_label "BR1_CLK+"
 		(shape output)
-		(at 245.11 68.58 0)
+		(at 245.11 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5670,11 +5635,11 @@
 			)
 			(justify left)
 		)
-		(uuid "6eae2f38-daf1-452e-a077-90e1b5850e6e")
+		(uuid "9687571c-e9f2-4ccc-b6d1-c8dd04e7fb71")
 	)
 	(hierarchical_label "PECLK-"
 		(shape output)
-		(at 245.11 101.6 0)
+		(at 245.11 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5682,7 +5647,7 @@
 			)
 			(justify left)
 		)
-		(uuid "9ba01876-8814-43a7-aa0f-8387db9e24f3")
+		(uuid "96f95358-f46f-4a3a-8ca2-7a39c835589f")
 	)
 	(hierarchical_label "PG"
 		(shape output)
@@ -5695,30 +5660,6 @@
 			(justify left)
 		)
 		(uuid "bd857e62-cd29-4ea1-982e-aa3c5dab6ef2")
-	)
-	(hierarchical_label "PECLK+"
-		(shape output)
-		(at 245.11 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c4e0a923-41d5-463e-8102-7b7a7476d7f6")
-	)
-	(hierarchical_label "BR1_CLK-"
-		(shape output)
-		(at 245.11 74.93 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e45725f2-0913-4ace-8f53-726a2a7b9807")
 	)
 	(hierarchical_label "+3V3"
 		(shape input)

@@ -5,8 +5,15 @@
 	(uuid "95df188e-dd64-4819-a2fb-f899fe5389d0")
 	(paper "A4")
 	(title_block
-		(date "2024-07-17")
+		(title "CQ2")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "PCI to PCIE Bridge")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "202-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols
 		(symbol "-power:PWR_FLAG"
@@ -8682,7 +8689,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 38.1) (xy 80.01 38.1)
+			(xy 41.91 38.1) (xy 80.01 38.1)
 		)
 		(stroke
 			(width 0)
@@ -8932,7 +8939,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 33.02) (xy 44.45 33.02)
+			(xy 29.21 33.02) (xy 36.83 33.02)
 		)
 		(stroke
 			(width 0)
@@ -11202,7 +11209,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 38.1) (xy 44.45 38.1)
+			(xy 29.21 38.1) (xy 36.83 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11702,79 +11709,13 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 33.02) (xy 49.53 33.02)
+			(xy 66.04 33.02) (xy 41.91 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "feda88af-a751-47d5-be1a-d4d3c63b884b")
-	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 190.5 191.262 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1a687f8d-b1d2-43ec-baa5-e16acfa18496")
-	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 268.605 192.532 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "1b289197-78eb-49c3-aa2e-ad69156bae99")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 190.5 193.802 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3a43dc95-1ab4-4263-9af1-30d4d8acae33")
-	)
-	(text "PCI to PCIE Bridge"
-		(exclude_from_sim no)
-		(at 190.5 187.452 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b489b4f3-e784-49a4-ad4c-3211437f76fc")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 236.728 193.929 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c062de09-e368-4cda-b497-e2c7a477a82b")
-	)
-	(text "2024-07-03"
-		(exclude_from_sim no)
-		(at 236.728 191.389 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dad8109d-83ed-4987-b7bf-1e31b7b70e42")
 	)
 	(label "PCI_AD3"
 		(at 149.86 38.1 180)
@@ -12149,6 +12090,17 @@
 			(justify right bottom)
 		)
 		(uuid "6dd44863-ffb4-48fc-a730-36b7b688e05a")
+	)
+	(label "PCI_GNT#"
+		(at 50.8 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "775b1537-fb7f-4813-91f8-30cff3d080ec")
 	)
 	(label "PCI_AD30"
 		(at 149.86 106.68 180)
@@ -12931,6 +12883,50 @@
 			(justify right)
 		)
 		(uuid "f11b1ff0-93fd-4996-b637-86010acf9645")
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 57.15 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c567e05-c4fc-4bc2-acff-11beb53d243b")
+		(property "Netclass" "PCIE"
+			(at 57.658 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 57.15 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "692123ef-4063-430d-ac63-d4fe601b42de")
+		(property "Netclass" "PCIE"
+			(at 57.658 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "ci4rail-database:capacitors/86")
@@ -22154,7 +22150,7 @@
 	)
 	(symbol
 		(lib_id "ci4rail-database:capacitors/86")
-		(at 46.99 33.02 90)
+		(at 39.37 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22162,7 +22158,7 @@
 		(dnp no)
 		(uuid "d89ae441-5416-415c-bba7-ec860938201f")
 		(property "Reference" "C27"
-			(at 41.402 31.75 90)
+			(at 33.782 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22170,7 +22166,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 52.324 31.75 90)
+			(at 44.704 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22178,7 +22174,7 @@
 			)
 		)
 		(property "Footprint" "0-standard:0402-capacitor"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22187,7 +22183,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22196,7 +22192,7 @@
 			)
 		)
 		(property "Description" "Multilayer Ceramic Capacitors"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22205,7 +22201,7 @@
 			)
 		)
 		(property "Value1" "+/-10 %"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22214,7 +22210,7 @@
 			)
 		)
 		(property "Value2" "50V"
-			(at 57.912 31.75 90)
+			(at 50.292 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22222,7 +22218,7 @@
 			)
 		)
 		(property "Value3" "X5R/X7R"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22231,7 +22227,7 @@
 			)
 		)
 		(property "Value4" ""
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22240,7 +22236,7 @@
 			)
 		)
 		(property "MPN" "n/a"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22249,7 +22245,7 @@
 			)
 		)
 		(property "MPN1" ""
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22258,7 +22254,7 @@
 			)
 		)
 		(property "MPN2" ""
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22267,7 +22263,7 @@
 			)
 		)
 		(property "LTB" "9999"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22276,7 +22272,7 @@
 			)
 		)
 		(property "ERP1" "M120-00060-00"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22285,7 +22281,7 @@
 			)
 		)
 		(property "ERP2" "110.42.410.050.0"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22294,7 +22290,7 @@
 			)
 		)
 		(property "Cost" "0.02"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22303,7 +22299,7 @@
 			)
 		)
 		(property "Lifecycle" "released"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22312,7 +22308,7 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 46.99 33.02 0)
+			(at 39.37 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23444,7 +23440,7 @@
 	)
 	(symbol
 		(lib_id "ci4rail-database:capacitors/86")
-		(at 46.99 38.1 90)
+		(at 39.37 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23452,7 +23448,7 @@
 		(dnp no)
 		(uuid "feda5556-e09c-4ffd-a252-bd65b1379b14")
 		(property "Reference" "C28"
-			(at 41.402 36.83 90)
+			(at 33.782 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23460,7 +23456,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 52.324 36.83 90)
+			(at 44.704 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23468,7 +23464,7 @@
 			)
 		)
 		(property "Footprint" "0-standard:0402-capacitor"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23477,7 +23473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23486,7 +23482,7 @@
 			)
 		)
 		(property "Description" "Multilayer Ceramic Capacitors"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23495,7 +23491,7 @@
 			)
 		)
 		(property "Value1" "+/-10 %"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23504,7 +23500,7 @@
 			)
 		)
 		(property "Value2" "50V"
-			(at 57.912 36.83 90)
+			(at 50.292 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23512,7 +23508,7 @@
 			)
 		)
 		(property "Value3" "X5R/X7R"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23521,7 +23517,7 @@
 			)
 		)
 		(property "Value4" ""
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23530,7 +23526,7 @@
 			)
 		)
 		(property "MPN" "n/a"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23539,7 +23535,7 @@
 			)
 		)
 		(property "MPN1" ""
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23548,7 +23544,7 @@
 			)
 		)
 		(property "MPN2" ""
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23557,7 +23553,7 @@
 			)
 		)
 		(property "LTB" "9999"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23566,7 +23562,7 @@
 			)
 		)
 		(property "ERP1" "M120-00060-00"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23575,7 +23571,7 @@
 			)
 		)
 		(property "ERP2" "110.42.410.050.0"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23584,7 +23580,7 @@
 			)
 		)
 		(property "Cost" "0.02"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23593,7 +23589,7 @@
 			)
 		)
 		(property "Lifecycle" "released"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23602,7 +23598,7 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 46.99 38.1 0)
+			(at 39.37 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)

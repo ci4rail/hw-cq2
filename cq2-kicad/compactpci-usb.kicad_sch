@@ -5,8 +5,15 @@
 	(uuid "13c7307e-49d9-4fec-a395-7f45d40a8f77")
 	(paper "A4")
 	(title_block
-		(date "2024-07-17")
+		(title "CQ2")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "CPCI to USB Interface")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "2024-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols)
 	(wire
@@ -709,72 +716,6 @@
 		)
 		(uuid "03071723-2928-4481-8296-b41a3de96cd4")
 	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 191.262 193.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "11b9a719-d527-4365-853f-c43cd52c9675")
-	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 191.262 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1fecffc8-edd1-4b23-b079-60da165e63dc")
-	)
-	(text "CPCI to USB Interface"
-		(exclude_from_sim no)
-		(at 191.262 187.198 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3ea64efe-3ff6-40ea-8f2e-fab0bdef3d1d")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 237.49 193.675 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "67c392f1-311c-4a4e-ba6c-fdd35286cec0")
-	)
-	(text "2024-07-03"
-		(exclude_from_sim no)
-		(at 237.49 191.135 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dbe5014a-1319-4a4e-b415-349bc2c69f8f")
-	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 269.367 192.278 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "f565cdeb-c933-4d39-a533-cc7ac5a80dc5")
-	)
 	(label "PCI_RST#"
 		(at 195.58 100.33 0)
 		(fields_autoplaced yes)
@@ -1113,6 +1054,182 @@
 			(justify right)
 		)
 		(uuid "f56fa3a8-985b-4cd5-937f-fa22c9040eff")
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 73.66 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0050ee3d-fc8d-4685-8a50-821cad6a6e75")
+		(property "Netclass" "PCIE"
+			(at 74.168 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 73.66 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "536d4caa-3ad8-4fc9-9e75-59789c361a54")
+		(property "Netclass" "PCIE"
+			(at 74.168 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 73.66 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ab28472-33a0-4613-b3fc-9f08384938dd")
+		(property "Netclass" "PCIE"
+			(at 74.168 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 73.66 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "891ae83b-3624-4fc2-bb27-78d7246b10e8")
+		(property "Netclass" "PCIE"
+			(at 74.168 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 121.92 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b240f323-e3de-4aa7-8480-cb06785c6d27")
+		(property "Netclass" "PCIE"
+			(at 122.428 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 73.66 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b80816da-b468-46a1-8c3b-3409e653d283")
+		(property "Netclass" "PCIE"
+			(at 74.168 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 121.92 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cf75d8e7-64a1-47cb-8536-2334979c3fef")
+		(property "Netclass" "PCIE"
+			(at 122.428 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 73.66 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1bd9d92-d318-4246-834c-ce4a4661bda8")
+		(property "Netclass" "PCIE"
+			(at 74.168 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(sheet
 		(at 212.09 46.99)

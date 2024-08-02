@@ -6,8 +6,14 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-17")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "Linear Post-Regulator")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "2024-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols
 		(symbol "ci4rail-database:capacitors/23"
@@ -8558,28 +8564,6 @@
 		)
 		(uuid "1ab32bae-d571-423e-a285-28fe5cf13d47")
 	)
-	(text "Linear Post-Regulator"
-		(exclude_from_sim no)
-		(at 190.754 187.198 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "20a4af7a-57cd-47af-950a-5c395dce7ba5")
-	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 268.859 192.278 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "34fb8a58-3507-4c92-a116-57e65b85c39a")
-	)
 	(text "FSR = ±6.144"
 		(exclude_from_sim no)
 		(at 201.93 134.62 0)
@@ -8612,17 +8596,6 @@
 		)
 		(uuid "80d6c85d-0750-42b5-8306-1f6bed0a9643")
 	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 190.754 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "83551872-f896-4cdc-99e2-f5d10f569121")
-	)
 	(text "Fullscale 2A -> 2V"
 		(exclude_from_sim no)
 		(at 51.054 154.94 0)
@@ -8647,17 +8620,6 @@
 		)
 		(uuid "960ca938-497a-4403-beb8-568a4b697420")
 	)
-	(text "rbd"
-		(exclude_from_sim no)
-		(at 190.754 193.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "99fbd8bd-c5c2-4de2-9902-7a22ca9c9fc4")
-	)
 	(text "-2 V"
 		(exclude_from_sim no)
 		(at 77.47 72.39 0)
@@ -8667,28 +8629,6 @@
 			)
 		)
 		(uuid "b8ebc2d8-95f7-4035-b233-993f3d74ba7c")
-	)
-	(text "2024-07-03"
-		(exclude_from_sim no)
-		(at 237.744 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c4630e28-492f-4af8-90bc-3696118da12e")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 237.49 193.802 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "de6fb871-fdcd-4a5b-a1f5-3412b3f56947")
 	)
 	(text "Fullscale 50V -> 4.2962V"
 		(exclude_from_sim no)

@@ -6,8 +6,14 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-17")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "SPI based GPIO Extension")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "2024-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols
 		(symbol "ci4rail-database:capacitors/86"
@@ -3295,72 +3301,6 @@
 		)
 		(uuid "fe0e52ca-1fc1-4c89-95d5-63727737d800")
 	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 238.125 193.675 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0a71247a-c38d-446c-8c8f-62f5ff2989f7")
-	)
-	(text "2024-01-12"
-		(exclude_from_sim no)
-		(at 238.125 191.135 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "19c90708-48b4-411b-b84d-97dc7ce7d460")
-	)
-	(text "S.Poß"
-		(exclude_from_sim no)
-		(at 192.405 193.675 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "31092141-019f-4b69-93cc-c025b761ae9c")
-	)
-	(text "SPI based GPIO Extension"
-		(exclude_from_sim no)
-		(at 192.405 187.325 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "384ef809-3174-4371-b25f-68056b32720b")
-	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 270.51 192.405 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "991e233e-f420-4644-af9c-e18e4a9407f4")
-	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 192.405 191.135 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d3f111f0-8b09-4ffd-aa3a-c843ae7e0388")
-	)
 	(label "GND"
 		(at 74.93 125.73 0)
 		(fields_autoplaced yes)
@@ -3719,15 +3659,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 182.88 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 182.88 72.39 0)
 			(effects
 				(font
@@ -4212,15 +4143,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 195.58 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "4"
 			(uuid "a2261450-19f0-4dd3-86bf-216ec08d1d5c")
 		)
@@ -4417,15 +4339,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 182.88 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "4a05b639-b7d3-4a6d-9116-1e493b3d537f")
 		)
@@ -4610,15 +4523,6 @@
 			)
 		)
 		(property "Outline" "SMT 0805"
-			(at 195.58 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 195.58 35.56 0)
 			(effects
 				(font
@@ -4823,15 +4727,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 182.88 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "32c2cd37-6956-47a6-9110-00eb913e527e")
 		)
@@ -5014,15 +4909,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 182.88 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 182.88 43.18 0)
 			(effects
 				(font
@@ -5223,15 +5109,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 195.58 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "4"
 			(uuid "96ce2d3e-2eaf-4a4b-9c42-a91085b30d8b")
 		)
@@ -5420,15 +5297,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 182.88 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 182.88 74.93 0)
 			(effects
 				(font
@@ -5804,15 +5672,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 182.88 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 182.88 133.35 0)
 			(effects
 				(font
@@ -6395,15 +6254,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 195.58 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "4"
 			(uuid "4dcc22e1-ad76-4c73-83be-978d0646fdfa")
 		)
@@ -6600,15 +6450,6 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecyle" ""
-			(at 182.88 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "266c43ee-c736-44cc-925b-506812221f51")
 		)
@@ -6791,15 +6632,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 182.88 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 182.88 45.72 0)
 			(effects
 				(font

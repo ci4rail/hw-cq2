@@ -5,8 +5,15 @@
 	(uuid "53622c32-5eaf-4ed1-b7fd-2ecb14de4a79")
 	(paper "A4")
 	(title_block
-		(date "2024-07-17")
+		(title "CQ2")
+		(date "2024-07-31")
 		(rev "0")
+		(comment 1 "PCIe USB Interface")
+		(comment 2 "Manfred Schmitz")
+		(comment 3 "tbd")
+		(comment 4 "2024-07-03")
+		(comment 5 "tbd")
+		(comment 6 "A")
 	)
 	(lib_symbols
 		(symbol "ci4rail-database:capacitors/86"
@@ -5482,28 +5489,6 @@
 		)
 		(uuid "ffa8da05-5ce2-47c6-8854-0e7298713549")
 	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 191.008 193.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0871c762-5dc0-4228-b829-293402b298c7")
-	)
-	(text "A"
-		(exclude_from_sim no)
-		(at 269.113 192.278 0)
-		(effects
-			(font
-				(size 1.4986 1.4986)
-			)
-			(justify left bottom)
-		)
-		(uuid "6c75e500-a139-4921-8778-3069b8b06e19")
-	)
 	(text "Programmed part:	660.45.00004.50.40\nUnprogrammed part:	660.45.00004.50.2 "
 		(exclude_from_sim no)
 		(at 37.084 143.256 0)
@@ -5514,50 +5499,6 @@
 			(justify left)
 		)
 		(uuid "74e6e5d4-134e-4aae-a92a-6e8465ea27cf")
-	)
-	(text "2024-07-03"
-		(exclude_from_sim no)
-		(at 237.236 191.135 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "864b59a7-1f1f-4e4c-8b63-8733a595c3ef")
-	)
-	(text "PCIe USB Interface"
-		(exclude_from_sim no)
-		(at 191.008 187.198 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9c21d7ed-35e6-4767-83a6-800224dd8eb2")
-	)
-	(text "tbd"
-		(exclude_from_sim no)
-		(at 237.236 193.675 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b846d41a-a8f0-4e7c-9b3a-c1235363394b")
-	)
-	(text "M.Schmitz"
-		(exclude_from_sim no)
-		(at 191.008 191.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e46be6d4-c46d-4904-af0d-ebe45c5dc3b3")
 	)
 	(label "+1V"
 		(at 267.97 29.21 180)
@@ -6022,6 +5963,73 @@
 			(justify right)
 		)
 		(uuid "fb59311c-87f9-4927-87de-9b4a65e7e1e1")
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 99.06 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "093a3495-01b4-4c05-b926-12f7eb70547a")
+		(property "Netclass" "PCIE"
+			(at 99.568 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1.28)
+		(shape round)
+		(at 99.06 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c534f430-b9c4-448b-b210-8014f76d9a22")
+		(property "Netclass" "PCIE"
+			(at 99.568 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 129.54 29.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5d57321-7d79-4d0c-99c3-328dc8d03f51")
+		(property "Netclass" "PWR"
+			(at 130.1496 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "ci4rail-database:capacitors/93")
@@ -7686,15 +7694,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 58.42 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 58.42 74.93 0)
 			(effects
 				(font
@@ -9760,15 +9759,6 @@
 			)
 		)
 		(property "Outline" "SMT 0402"
-			(at 58.42 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Lifecyle" ""
 			(at 58.42 80.01 0)
 			(effects
 				(font

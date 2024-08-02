@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.0
+          "min_clearance": 1.0
         }
       },
       "diff_pair_dimensions": [
@@ -64,7 +64,12 @@
         "holes_co_located|252750000|145000000|016d7141-7fa2-4e51-8b5c-e857d88b8ee2|73c81cb7-3e67-4d3e-9820-a1e83b7938d9",
         "lib_footprint_mismatch|103000000|194450000|08918f68-4a1c-4516-96b6-90874401dbb3|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|179900000|149900000|8d8442db-cd24-4fdb-a26a-19a213ff8a21|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|179900000|150100000|9cf2ef76-5694-45d0-bf5f-e90d36316585|00000000-0000-0000-0000-000000000000"
+        "lib_footprint_mismatch|179900000|150100000|9cf2ef76-5694-45d0-bf5f-e90d36316585|00000000-0000-0000-0000-000000000000",
+        "starved_thermal|177286000|117762000|d3522947-3998-4f78-8573-d5e74198df29|eb679008-f107-4682-ad4a-38b4358b0e97|B.Cu",
+        "starved_thermal|181270000|118500000|d3522947-3998-4f78-8573-d5e74198df29|20bd545d-548e-4258-bfb9-62ed526c1b83|B.Cu",
+        "starved_thermal|186000000|117750000|d3522947-3998-4f78-8573-d5e74198df29|40cfc74e-1a45-402a-bb8a-b725da2c0287|B.Cu",
+        "starved_thermal|186150000|182000000|1e29030b-5ee5-4c92-b895-75dfdb9a5e91|274a241d-88d1-4a68-a4c2-30c671ae71a2|F.Cu",
+        "starved_thermal|188960000|118750000|d3522947-3998-4f78-8573-d5e74198df29|7a1aadc6-491d-4a9b-88b0-6a25afd24257|B.Cu"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -161,7 +166,7 @@
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
-          "td_maxlen": 1.0,
+          "td_maxlen": 0.5,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_round_shape",
           "td_width_to_size_filter_ratio": 0.9
@@ -169,10 +174,10 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
-          "td_height_ratio": 1.0,
+          "td_height_ratio": 0.6,
           "td_length_ratio": 0.5,
-          "td_maxheight": 2.0,
-          "td_maxlen": 1.0,
+          "td_maxheight": 0.5,
+          "td_maxlen": 0.5,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_rect_shape",
           "td_width_to_size_filter_ratio": 0.9
@@ -180,9 +185,9 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
-          "td_height_ratio": 1.0,
+          "td_height_ratio": 0.6,
           "td_length_ratio": 0.5,
-          "td_maxheight": 2.0,
+          "td_maxheight": 0.5,
           "td_maxlen": 1.0,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_track_end",
@@ -499,6 +504,23 @@
       {
         "bus_width": 12,
         "clearance": 0.13,
+        "diff_pair_gap": 0.13,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.16,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PCIE",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(194, 0, 194)",
+        "track_width": 0.16,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.13,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -532,17 +554,17 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.12,
+        "clearance": 0.13,
+        "diff_pair_gap": 0.13,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.22,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(194, 0, 194)",
-        "track_width": 0.22,
+        "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -561,6 +583,19 @@
       "/CompactPCI-Serial-USB/+3V3": "PWR",
       "/CompactPCI-Serial-USB/GND": "PWR",
       "/CompactPCI-USB/+1V": "PWR",
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_CLK+": "PCIE",
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_CLK-": "PCIE",
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_R+": "PCIE",
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_R-": "PCIE",
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_T+": "PCIE",
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_T-": "PCIE",
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_TN": "PCIE",
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_TP": "PCIE",
+      "/CompactPCI-USB/PCIe USB/+3V3A": "PWR",
+      "/CompactPCI-USB/PCIe USB/PECLK+": "PCIE",
+      "/CompactPCI-USB/PCIe USB/PECLK-": "PCIE",
+      "/CompactPCI-USB/PCIe USB/PETXC+": "PCIE",
+      "/CompactPCI-USB/PCIe USB/PETXC-": "PCIE",
       "/GND": "PWR",
       "/PSU1/Isolated Pre-Regulator/+50V_VIN": "Power",
       "/PSU1/Isolated Pre-Regulator/+VIN_ISO": "Power",
@@ -572,6 +607,7 @@
       "/PSU1/Output Switch/+VOUT_SW": "Power",
       "/PSU1/PSU Control/+3V3_ISO_D": "PWR",
       "/PSU1/PSU Control/+5V_ISO": "PWR",
+      "/PSU1/PSU Control/GND_ISO": "PWR",
       "/PSU1/PSU1 IO/GND_ISO": "Power",
       "/PSU1/Post-Regulator/+VIN_ISO": "PWR_ISO",
       "/PSU1/Post-Regulator/+VOUT": "Power",
@@ -594,6 +630,7 @@
       "/PSU2/Output Switch/+VOUT_SW": "Power",
       "/PSU2/PSU Control/+3V3_ISO_D": "PWR",
       "/PSU2/PSU Control/+5V_ISO": "PWR",
+      "/PSU2/PSU Control/GND_ISO": "PWR",
       "/PSU2/PSU1 IO/GND_ISO": "Power",
       "/PSU2/Post-Regulator/+VIN_ISO": "PWR_ISO",
       "/PSU2/Post-Regulator/+VOUT": "Power",
@@ -614,6 +651,12 @@
       "/Power IN/+VIN": "Power",
       "/Power IN/-VIN": "Power",
       "/Power IN/GND_VIN": "PWR_ISO",
+      "/USB_2_D+": "USB",
+      "/USB_2_D-": "USB",
+      "/USB_2_P_D+": "USB",
+      "/USB_2_P_D-": "USB",
+      "/USB_2_S_D+": "USB",
+      "/USB_2_S_D-": "USB",
       "/V1+": "PWR_ISO",
       "/V1-": "PWR",
       "/V2+": "PWR_ISO",
@@ -699,18 +742,18 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../mech-cq2/cq2-heatsink/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../EKF/Freecad-EKF/cq2-frontpanel/cq2-00.step",
+      "step": "../../mech-cq2/cq2-heatsink/cq2-00.step",
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "${KICAD_USER_TEMPLATE_DIR}/ekf-page-template.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "cq2-partlist-extended-2024-07-17.csv",
+    "bom_export_filename": "cq2-partlist-extended-2024-07-28.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ";",
@@ -725,6 +768,12 @@
     "bom_settings": {
       "exclude_dnp": true,
       "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": true
+        },
         {
           "group_by": false,
           "label": "Reference",
@@ -829,12 +878,6 @@
         },
         {
           "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "ERP1",
           "name": "ERP1",
           "show": false
@@ -855,12 +898,6 @@
           "group_by": false,
           "label": "FIT",
           "name": "FIT",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Lifecyle",
-          "name": "Lifecyle",
           "show": false
         }
       ],
@@ -908,7 +945,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "${KICAD_USER_TEMPLATE_DIR}/ekf-page-template.kicad_wks",
-    "plot_directory": "./",
+    "plot_directory": "../prod/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
