@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-31")
+		(date "2024-08-03")
 		(rev "0")
 		(comment 1 "SPI based GPIO Extension")
 		(comment 2 "Manfred Schmitz")
@@ -2322,7 +2322,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" "MM 15.7x11.3X4.9"
+			(property "Outline" "MMT 15.7x11.3X4.9"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5487,7 +5487,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" "MM 15.7x11.3X4.9"
+		(property "Outline" "MMT 15.7x11.3X4.9"
 			(at 229.87 143.51 0)
 			(effects
 				(font

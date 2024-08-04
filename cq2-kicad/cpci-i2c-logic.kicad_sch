@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-31")
+		(date "2024-08-03")
 		(rev "0")
 		(comment 1 "CPCI I2C Logic")
 		(comment 2 "Manfred Schmitz")

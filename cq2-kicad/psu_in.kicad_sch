@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-31")
+		(date "2024-08-03")
 		(rev "0")
 		(comment 1 "Power Filter and Supervisor")
 		(comment 2 "Manfred Schmitz")
@@ -1287,7 +1287,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Transistor MOSFET N-Channel - SMT"
+			(property "Description" "Transistor MOSFET N-Channel"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1403,7 +1403,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" ""
+			(property "Outline" "SMT SOP-Advance-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2075,7 +2075,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Common Mode Filter - SMT"
+			(property "Description" "Common Mode Filter"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2119,7 +2119,7 @@
 					(hide yes)
 				)
 			)
-			(property "MPN" "Pulse  P0353NL"
+			(property "MPN" "Pulse  P0353NLT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2200,7 +2200,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" ""
+			(property "Outline" "SMT 19.56x17.02x9.91mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3429,7 +3429,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Analog Voltage Reference - SMT"
+			(property "Description" "Analog Voltage Reference"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3546,7 +3546,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" ""
+			(property "Outline" "SMT SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3817,7 +3817,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" ""
+			(property "Outline" "SMT SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8314,16 +8314,6 @@
 		)
 		(uuid "7b9f1f6c-b704-4939-86ee-fed7af7d537d")
 	)
-	(text "119.3.7060.0140.0  ???"
-		(exclude_from_sim no)
-		(at 119.634 46.228 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8179dc87-6282-42fa-8142-ebb779ed4b24")
-	)
 	(text "Reverse Polarity Protection"
 		(exclude_from_sim no)
 		(at 201.422 27.686 0)
@@ -10005,7 +9995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Transistor MOSFET N-Channel - SMT"
+		(property "Description" "Transistor MOSFET N-Channel"
 			(at 162.56 88.9 0)
 			(effects
 				(font
@@ -10121,7 +10111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT SOP-Advance-8"
 			(at 162.56 88.9 0)
 			(effects
 				(font
@@ -10510,7 +10500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT SOT-23"
 			(at 223.52 57.15 0)
 			(effects
 				(font
@@ -14949,7 +14939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Analog Voltage Reference - SMT"
+		(property "Description" "Analog Voltage Reference"
 			(at 162.56 104.14 0)
 			(effects
 				(font
@@ -15066,7 +15056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT SOT-23"
 			(at 162.56 104.14 0)
 			(effects
 				(font
@@ -16085,7 +16075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Common Mode Filter - SMT"
+		(property "Description" "Common Mode Filter"
 			(at 116.84 63.5 0)
 			(effects
 				(font
@@ -16129,7 +16119,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "Pulse  P0353NL"
+		(property "MPN" "Pulse  P0353NLT"
 			(at 116.84 63.5 0)
 			(effects
 				(font
@@ -16210,7 +16200,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT 19.56x17.02x9.91mm"
 			(at 116.84 63.5 0)
 			(effects
 				(font
@@ -16677,7 +16667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Transistor MOSFET N-Channel - SMT"
+		(property "Description" "Transistor MOSFET N-Channel"
 			(at 224.79 40.64 0)
 			(effects
 				(font
@@ -16793,7 +16783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT SOP-Advance-8"
 			(at 224.79 40.64 0)
 			(effects
 				(font

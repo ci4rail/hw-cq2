@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-31")
+		(date "2024-08-03")
 		(rev "0")
 		(comment 2 "Manfred Schmitz")
 		(comment 3 "tbd")
@@ -12333,7 +12333,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value2" "100 ppm"
+		(property "Value2" ""
 			(at 179.07 106.68 0)
 			(effects
 				(font
@@ -12342,7 +12342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value3" "62.5 mW"
+		(property "Value3" ""
 			(at 179.07 106.68 0)
 			(effects
 				(font
@@ -12351,7 +12351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value4" "50 V"
+		(property "Value4" ""
 			(at 179.07 106.68 0)
 			(effects
 				(font
@@ -12915,7 +12915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value2" "100 ppm"
+		(property "Value2" ""
 			(at 179.07 101.6 0)
 			(effects
 				(font
@@ -12924,7 +12924,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value3" "62.5 mW"
+		(property "Value3" ""
 			(at 179.07 101.6 0)
 			(effects
 				(font
@@ -12933,7 +12933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value4" "50 V"
+		(property "Value4" ""
 			(at 179.07 101.6 0)
 			(effects
 				(font
@@ -14543,7 +14543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value2" "100 ppm"
+		(property "Value2" ""
 			(at 179.07 104.14 0)
 			(effects
 				(font
@@ -14552,7 +14552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value3" "62.5 mW"
+		(property "Value3" ""
 			(at 179.07 104.14 0)
 			(effects
 				(font
@@ -14561,7 +14561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value4" "50 V"
+		(property "Value4" ""
 			(at 179.07 104.14 0)
 			(effects
 				(font
@@ -15685,7 +15685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value2" "100 ppm"
+		(property "Value2" ""
 			(at 179.07 114.3 0)
 			(effects
 				(font
@@ -15694,7 +15694,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value3" "62.5 mW"
+		(property "Value3" ""
 			(at 179.07 114.3 0)
 			(effects
 				(font
@@ -15703,7 +15703,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value4" "50 V"
+		(property "Value4" ""
 			(at 179.07 114.3 0)
 			(effects
 				(font
@@ -16066,7 +16066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value2" "100 ppm"
+		(property "Value2" ""
 			(at 179.07 111.76 0)
 			(effects
 				(font
@@ -16075,7 +16075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value3" "62.5 mW"
+		(property "Value3" ""
 			(at 179.07 111.76 0)
 			(effects
 				(font
@@ -16084,7 +16084,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value4" "50 V"
+		(property "Value4" ""
 			(at 179.07 111.76 0)
 			(effects
 				(font

@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-31")
+		(date "2024-08-03")
 		(rev "0")
 		(comment 1 "Isolated Foreward Pre-Regulator")
 		(comment 2 "Manfred Schmitz")
@@ -1024,7 +1024,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Transistor MOSFET N-Channel - SMT"
+			(property "Description" "Transistor MOSFET N-Channel"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1140,7 +1140,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" ""
+			(property "Outline" "SMT SOP-Advance-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2176,7 +2176,7 @@
 					(hide yes)
 				)
 			)
-			(property "Lifecycle" "review pending CQ2"
+			(property "Lifecycle" "EPR1 pending CQ2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2185,7 +2185,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" "SMZ 23.37x20.83x9.14mm"
+			(property "Outline" "SMT 23.37x20.83x9.14mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -11610,7 +11610,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Transistor MOSFET N-Channel - SMT"
+		(property "Description" "Transistor MOSFET N-Channel"
 			(at 198.12 72.39 0)
 			(effects
 				(font
@@ -11727,7 +11727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT SOP-Advance-8"
 			(at 198.12 72.39 0)
 			(effects
 				(font
@@ -12306,7 +12306,7 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecycle" "review pending CQ2"
+		(property "Lifecycle" "EPR1 pending CQ2"
 			(at 124.46 156.21 0)
 			(effects
 				(font
@@ -12315,7 +12315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" "SMZ 23.37x20.83x9.14mm"
+		(property "Outline" "SMT 23.37x20.83x9.14mm"
 			(at 124.46 156.21 0)
 			(effects
 				(font
@@ -12997,7 +12997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Transistor MOSFET N-Channel - SMT"
+		(property "Description" "Transistor MOSFET N-Channel"
 			(at 241.3 53.34 0)
 			(effects
 				(font
@@ -13114,7 +13114,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT SOP-Advance-8"
 			(at 241.3 53.34 0)
 			(effects
 				(font
@@ -14370,7 +14370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Transistor MOSFET N-Channel - SMT"
+		(property "Description" "Transistor MOSFET N-Channel"
 			(at 241.3 72.39 0)
 			(effects
 				(font
@@ -14487,7 +14487,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT SOP-Advance-8"
 			(at 241.3 72.39 0)
 			(effects
 				(font
@@ -15545,7 +15545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value2" "100 ppm"
+		(property "Value2" ""
 			(at 195.58 63.5 0)
 			(effects
 				(font
@@ -15554,7 +15554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value3" "62.5 mW"
+		(property "Value3" ""
 			(at 195.58 63.5 0)
 			(effects
 				(font
@@ -15563,7 +15563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value4" "50 V"
+		(property "Value4" ""
 			(at 195.58 63.5 0)
 			(effects
 				(font
@@ -17329,7 +17329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Transistor MOSFET N-Channel - SMT"
+		(property "Description" "Transistor MOSFET N-Channel"
 			(at 198.12 53.34 0)
 			(effects
 				(font
@@ -17446,7 +17446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT SOP-Advance-8"
 			(at 198.12 53.34 0)
 			(effects
 				(font
@@ -17554,7 +17554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value2" "100 ppm"
+		(property "Value2" ""
 			(at 243.84 63.5 0)
 			(effects
 				(font
@@ -17563,7 +17563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value3" "62.5 mW"
+		(property "Value3" ""
 			(at 243.84 63.5 0)
 			(effects
 				(font
@@ -17572,7 +17572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value4" "50 V"
+		(property "Value4" ""
 			(at 243.84 63.5 0)
 			(effects
 				(font

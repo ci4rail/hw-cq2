@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-31")
+		(date "2024-08-03")
 		(rev "0")
 		(comment 1 "Linear Post-Regulator")
 		(comment 2 "Manfred Schmitz")
@@ -1265,7 +1265,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Transistor MOSFET N-Channel - SMT"
+			(property "Description" "Transistor MOSFET N-Channel"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1381,7 +1381,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" ""
+			(property "Outline" "SMT SOP-Advance-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -18311,7 +18311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Transistor MOSFET N-Channel - SMT"
+		(property "Description" "Transistor MOSFET N-Channel"
 			(at 152.4 92.71 0)
 			(effects
 				(font
@@ -18429,7 +18429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT SOP-Advance-8"
 			(at 152.4 92.71 0)
 			(effects
 				(font

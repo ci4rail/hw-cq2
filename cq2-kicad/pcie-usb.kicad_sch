@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CQ2")
-		(date "2024-07-31")
+		(date "2024-08-03")
 		(rev "0")
 		(comment 1 "PCIe USB Interface")
 		(comment 2 "Manfred Schmitz")
@@ -1065,7 +1065,7 @@
 					(hide yes)
 				)
 			)
-			(property "Lifecycle" "review pending CQ2"
+			(property "Lifecycle" "ERP1 pending CQ2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1074,7 +1074,7 @@
 					(hide yes)
 				)
 			)
-			(property "Outline" ""
+			(property "Outline" "SMT QFN-48"
 				(at 0 0 0)
 				(effects
 					(font
@@ -10119,7 +10119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecycle" "review pending CQ2"
+		(property "Lifecycle" "ERP1 pending CQ2"
 			(at 152.4 97.79 0)
 			(effects
 				(font
@@ -10128,7 +10128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT QFN-48"
 			(at 152.4 97.79 0)
 			(effects
 				(font
