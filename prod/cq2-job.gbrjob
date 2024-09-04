@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "8.0.4"
     },
-    "CreationDate": "2024-07-29T18:47:44+02:00"
+    "CreationDate": "2024-09-04T12:40:56+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -14,8 +14,8 @@
       "Revision": "0.00"
     },
     "Size": {
-      "X": 160.1,
-      "Y": 100.1
+      "X": 160.05,
+      "Y": 100.05
     },
     "LayerNumber": 4,
     "BoardThickness": 1.582,
@@ -90,6 +90,16 @@
     {
       "Path": "cq2-Edge_Cuts.gbr",
       "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "cq2-F_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "cq2-B_Fab.gbr",
+      "FileFunction": "AssemblyDrawing,Bot",
       "FilePolarity": "Positive"
     }
   ],

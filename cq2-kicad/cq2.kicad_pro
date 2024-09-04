@@ -59,18 +59,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "courtyards_overlap|103227236|191517465|08918f68-4a1c-4516-96b6-90874401dbb3|8759f3d2-58b5-4d9d-ac1b-faafffce185a",
-        "holes_co_located|252750000|145000000|016d7141-7fa2-4e51-8b5c-e857d88b8ee2|73c81cb7-3e67-4d3e-9820-a1e83b7938d9",
-        "lib_footprint_mismatch|103000000|194450000|08918f68-4a1c-4516-96b6-90874401dbb3|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|179900000|149900000|8d8442db-cd24-4fdb-a26a-19a213ff8a21|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|179900000|150100000|9cf2ef76-5694-45d0-bf5f-e90d36316585|00000000-0000-0000-0000-000000000000",
-        "starved_thermal|177286000|117762000|d3522947-3998-4f78-8573-d5e74198df29|eb679008-f107-4682-ad4a-38b4358b0e97|B.Cu",
-        "starved_thermal|181270000|118500000|d3522947-3998-4f78-8573-d5e74198df29|20bd545d-548e-4258-bfb9-62ed526c1b83|B.Cu",
-        "starved_thermal|186000000|117750000|d3522947-3998-4f78-8573-d5e74198df29|40cfc74e-1a45-402a-bb8a-b725da2c0287|B.Cu",
-        "starved_thermal|186150000|182000000|1e29030b-5ee5-4c92-b895-75dfdb9a5e91|274a241d-88d1-4a68-a4c2-30c671ae71a2|F.Cu",
-        "starved_thermal|188960000|118750000|d3522947-3998-4f78-8573-d5e74198df29|7a1aadc6-491d-4a9b-88b0-6a25afd24257|B.Cu"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -742,18 +731,18 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../../mech-cq2/cq2-heatsink/",
-      "pos_files": "",
+      "plot": "../prod/",
+      "pos_files": "../",
       "specctra_dsn": "",
       "step": "../../mech-cq2/cq2-heatsink/cq2-00.step",
       "svg": "",
       "vrml": ""
     },
-    "page_layout_descr_file": "${KICAD_USER_TEMPLATE_DIR}/ekf-page-template.kicad_wks"
+    "page_layout_descr_file": ""
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "cq2-partlist-short-2024-08-03.csv",
+    "bom_export_filename": "cq2-partlist-short-2024-09-04.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ";",

@@ -2081,7 +2081,7 @@
 					(hide yes)
 				)
 			)
-			(property "ERP2" "670.70.7840.01"
+			(property "ERP2" "670.70.7841.01"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2126,7 +2126,7 @@
 					(hide yes)
 				)
 			)
-			(property "MPN" "TI ISOW7840DWE"
+			(property "MPN" "TI ISOW7841DWE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -14178,7 +14178,7 @@
 				(hide yes)
 			)
 		)
-		(property "ERP2" "670.70.7840.01"
+		(property "ERP2" "670.70.7841.01"
 			(at 96.52 73.2099 0)
 			(effects
 				(font
@@ -14222,7 +14222,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "TI ISOW7840DWE"
+		(property "MPN" "TI ISOW7841DWE"
 			(at 96.52 87.63 0)
 			(effects
 				(font

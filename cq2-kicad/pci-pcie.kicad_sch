@@ -10576,7 +10576,7 @@
 		(fields_autoplaced yes)
 		(uuid "06166cd2-bf23-4c07-b1c3-2d1d3add336f")
 		(property "Reference" "U6"
-			(at 232.41 -10.9916 0)
+			(at 232.41 22.0284 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10584,7 +10584,7 @@
 			)
 		)
 		(property "Value" "PI7C9X111"
-			(at 232.41 -8.1587 0)
+			(at 232.41 24.8613 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -10702,7 +10702,7 @@
 			)
 		)
 		(property "ERP2" "650.66.79111.00"
-			(at 232.41 -5.5301 0)
+			(at 232.41 27.4899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10718,7 +10718,7 @@
 				(hide yes)
 			)
 		)
-		(property "Lifecycle" "review pending CQ2"
+		(property "Lifecycle" "ERP1 pending CQ2"
 			(at 232.41 64.77 0)
 			(effects
 				(font
@@ -10727,7 +10727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Outline" ""
+		(property "Outline" "SMT LQFP128 14x14x1.45mm"
 			(at 232.41 64.77 0)
 			(effects
 				(font
