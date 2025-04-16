@@ -513,7 +513,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "../prod/",
+      "plot": "./",
       "pos_files": "../prod/",
       "specctra_dsn": "",
       "step": "../../mech-cq2/cq2-heatsink/cq2-00.step",
