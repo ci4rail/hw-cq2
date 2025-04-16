@@ -71,16 +71,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -91,9 +94,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
@@ -108,7 +113,9 @@
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -125,6 +132,7 @@
         "min_clearance": 0.13,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.0,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.05,
         "min_microvia_diameter": 0.2,
@@ -142,10 +150,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -228,6 +237,7 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
@@ -422,10 +432,15 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -438,9 +453,14 @@
       "pin_not_driven": "error",
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -452,7 +472,7 @@
   },
   "meta": {
     "filename": "cq2.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -467,6 +487,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.12,
         "via_diameter": 0.6,
@@ -484,6 +505,7 @@
         "microvia_drill": 0.1,
         "name": "PCI",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
         "schematic_color": "rgb(155, 60, 72)",
         "track_width": 0.19,
         "via_diameter": 0.6,
@@ -501,6 +523,7 @@
         "microvia_drill": 0.1,
         "name": "PCIE",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
         "schematic_color": "rgb(194, 0, 194)",
         "track_width": 0.16,
         "via_diameter": 0.6,
@@ -518,6 +541,7 @@
         "microvia_drill": 0.1,
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
         "schematic_color": "rgb(194, 0, 0)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -535,6 +559,7 @@
         "microvia_drill": 0.1,
         "name": "PWR_ISO",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
         "schematic_color": "rgb(194, 0, 0)",
         "track_width": 1.0,
         "via_diameter": 0.6,
@@ -552,6 +577,7 @@
         "microvia_drill": 0.1,
         "name": "USB",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
         "schematic_color": "rgb(194, 0, 194)",
         "track_width": 0.2,
         "via_diameter": 0.6,
@@ -560,144 +586,414 @@
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": {
-      "/+3V3": "PWR",
-      "/CompactPCI-S-USB/+12V": "PWR",
-      "/CompactPCI-S-USB/+3V3": "PWR",
-      "/CompactPCI-S-USB/GND": "PWR",
-      "/CompactPCI-Serial-USB/+12V": "PWR",
-      "/CompactPCI-Serial-USB/+3V3": "PWR",
-      "/CompactPCI-Serial-USB/GND": "PWR",
-      "/CompactPCI-USB/+1V": "PWR",
-      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_CLK+": "PCIE",
-      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_CLK-": "PCIE",
-      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_R+": "PCIE",
-      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_R-": "PCIE",
-      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_T+": "PCIE",
-      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_T-": "PCIE",
-      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_TN": "PCIE",
-      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_TP": "PCIE",
-      "/CompactPCI-USB/PCIe USB/+3V3A": "PWR",
-      "/CompactPCI-USB/PCIe USB/PECLK+": "PCIE",
-      "/CompactPCI-USB/PCIe USB/PECLK-": "PCIE",
-      "/CompactPCI-USB/PCIe USB/PETXC+": "PCIE",
-      "/CompactPCI-USB/PCIe USB/PETXC-": "PCIE",
-      "/GND": "PWR",
-      "/PSU1/Isolated Pre-Regulator/+50V_VIN": "Power",
-      "/PSU1/Isolated Pre-Regulator/+VIN_ISO": "Power",
-      "/PSU1/Isolated Pre-Regulator/-VIN_ISO": "Power",
-      "/PSU1/Isolated Pre-Regulator/GND_VIN": "Power",
-      "/PSU1/Isolated Pre-Regulator/HS1": "Power",
-      "/PSU1/Isolated Pre-Regulator/HS2": "Power",
-      "/PSU1/Output Switch/+VOUT": "PWR_ISO",
-      "/PSU1/Output Switch/+VOUT_SW": "Power",
-      "/PSU1/PSU Control/+3V3_ISO_D": "PWR",
-      "/PSU1/PSU Control/+5V_ISO": "PWR",
-      "/PSU1/PSU Control/GND_ISO": "PWR",
-      "/PSU1/PSU1 IO/GND_ISO": "Power",
-      "/PSU1/Post-Regulator/+VIN_ISO": "PWR_ISO",
-      "/PSU1/Post-Regulator/+VOUT": "Power",
-      "/PSU1/Post-Regulator/-5V_ISO": "PWR",
-      "/PSU1/Post-Regulator/-VIN_ISO": "PWR_ISO",
-      "/PSU1/Post-Regulator/-VOUT": "Power",
-      "/PSU1/Pre-Regulator/+50V_VIN": "PWR_ISO",
-      "/PSU1/Pre-Regulator/+VIN_ISO": "Power",
-      "/PSU1/Pre-Regulator/-VIN_ISO": "PWR_ISO",
-      "/PSU1/Pre-Regulator/GND_VIN": "PWR_ISO",
-      "/PSU1/Pre-Regulator/HS1": "PWR_ISO",
-      "/PSU1/Pre-Regulator/HS2": "PWR_ISO",
-      "/PSU2/Isolated Pre-Regulator/+50V_VIN": "Power",
-      "/PSU2/Isolated Pre-Regulator/+VIN_ISO": "Power",
-      "/PSU2/Isolated Pre-Regulator/-VIN_ISO": "Power",
-      "/PSU2/Isolated Pre-Regulator/GND_VIN": "Power",
-      "/PSU2/Isolated Pre-Regulator/HS1": "Power",
-      "/PSU2/Isolated Pre-Regulator/HS2": "Power",
-      "/PSU2/Output Switch/+VOUT": "PWR_ISO",
-      "/PSU2/Output Switch/+VOUT_SW": "Power",
-      "/PSU2/PSU Control/+3V3_ISO_D": "PWR",
-      "/PSU2/PSU Control/+5V_ISO": "PWR",
-      "/PSU2/PSU Control/GND_ISO": "PWR",
-      "/PSU2/PSU1 IO/GND_ISO": "Power",
-      "/PSU2/Post-Regulator/+VIN_ISO": "PWR_ISO",
-      "/PSU2/Post-Regulator/+VOUT": "Power",
-      "/PSU2/Post-Regulator/-5V_ISO": "PWR",
-      "/PSU2/Post-Regulator/-VIN_ISO": "PWR_ISO",
-      "/PSU2/Post-Regulator/-VOUT": "Power",
-      "/PSU2/Pre-Regulator/+50V_VIN": "PWR_ISO",
-      "/PSU2/Pre-Regulator/+VIN_ISO": "Power",
-      "/PSU2/Pre-Regulator/-VIN_ISO": "PWR_ISO",
-      "/PSU2/Pre-Regulator/GND_VIN": "PWR_ISO",
-      "/PSU2/Pre-Regulator/HS1": "PWR_ISO",
-      "/PSU2/Pre-Regulator/HS2": "PWR_ISO",
-      "/PSU_In/+50V_VIN": "Power",
-      "/PSU_In/+VIN": "Power",
-      "/PSU_In/-VIN": "Power",
-      "/PSU_In/GND_VIN": "Power",
-      "/Power IN/+50V_VIN": "PWR_ISO",
-      "/Power IN/+VIN": "Power",
-      "/Power IN/-VIN": "Power",
-      "/Power IN/GND_VIN": "PWR_ISO",
-      "/USB_2_D+": "USB",
-      "/USB_2_D-": "USB",
-      "/USB_2_P_D+": "USB",
-      "/USB_2_P_D-": "USB",
-      "/USB_2_S_D+": "USB",
-      "/USB_2_S_D-": "USB",
-      "/V1+": "PWR_ISO",
-      "/V1-": "PWR",
-      "/V2+": "PWR_ISO",
-      "/V2-": "PWR",
-      "/Vin+": "PWR_ISO",
-      "/Vin-": "PWR_ISO",
-      "Net-(C116-Pad1)": "PWR_ISO",
-      "Net-(C116-Pad2)": "PWR_ISO",
-      "Net-(C127-Pad2)": "Power",
-      "Net-(C166-Pad2)": "PWR_ISO",
-      "Net-(C244-Pad2)": "PWR_ISO",
-      "Net-(C4-Pad1)": "Power",
-      "Net-(C4-Pad2)": "Power",
-      "Net-(C49-Pad2)": "Power",
-      "Net-(D1-PadC)": "Power",
-      "Net-(D15-PadA)": "PWR_ISO",
-      "Net-(D15-PadC)": "PWR_ISO",
-      "Net-(D16-PadA)": "PWR_ISO",
-      "Net-(D16-PadC)": "PWR_ISO",
-      "Net-(D19-PadA)": "PWR_ISO",
-      "Net-(D19-PadC)": "PWR_ISO",
-      "Net-(D20-PadA)": "PWR_ISO",
-      "Net-(D20-PadC)": "PWR_ISO",
-      "Net-(D3-PadA)": "PWR_ISO",
-      "Net-(D3-PadC)": "PWR_ISO",
-      "Net-(D36-PadA)": "Power",
-      "Net-(D36-PadC)": "Power",
-      "Net-(D37-PadA)": "Power",
-      "Net-(D4-PadA)": "PWR_ISO",
-      "Net-(D4-PadC)": "PWR_ISO",
-      "Net-(D5-PadA)": "PWR_ISO",
-      "Net-(D6-PadA)": "PWR_ISO",
-      "Net-(Q1-S-Pad1)": "Power",
-      "Net-(Q10-S-Pad1)": "PWR_ISO",
-      "Net-(Q13-S-Pad1)": "Power",
-      "Net-(Q5-G)": "PWR_ISO",
-      "Net-(Q6-S-Pad1)": "PWR_ISO",
-      "Net-(Q9-G)": "PWR_ISO",
-      "Net-(U20-ANODE)": "PWR_ISO",
-      "Net-(U27-VISO)": "PWR",
-      "Net-(U3-ANODE)": "Power",
-      "Net-(U52-VISO)": "PWR",
-      "unconnected-(D1-PadA)": "Power",
-      "unconnected-(D4-PadA)": "Power",
-      "unconnected-(L18-Pad1)": "PWR_ISO",
-      "unconnected-(L19-Pad1)": "PWR_ISO",
-      "unconnected-(R270-Pad1)": "PWR_ISO",
-      "unconnected-(R286-Pad1)": "PWR_ISO",
-      "unconnected-(T1-Pad2)": "PWR_ISO",
-      "unconnected-(T1-Pad5)": "PWR_ISO",
-      "unconnected-(T2-Pad2)": "PWR_ISO",
-      "unconnected-(T2-Pad5)": "PWR_ISO"
+      "/+3V3": [
+        "PWR"
+      ],
+      "/CompactPCI-S-USB/+12V": [
+        "PWR"
+      ],
+      "/CompactPCI-S-USB/+3V3": [
+        "PWR"
+      ],
+      "/CompactPCI-S-USB/GND": [
+        "PWR"
+      ],
+      "/CompactPCI-Serial-USB/+12V": [
+        "PWR"
+      ],
+      "/CompactPCI-Serial-USB/+3V3": [
+        "PWR"
+      ],
+      "/CompactPCI-Serial-USB/GND": [
+        "PWR"
+      ],
+      "/CompactPCI-USB/+1V": [
+        "PWR"
+      ],
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_CLK+": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_CLK-": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_R+": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_R-": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_T+": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_PCIE_T-": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_TN": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCI-to-PCIe Bridge/BR1_TP": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCIe USB/+3V3A": [
+        "PWR"
+      ],
+      "/CompactPCI-USB/PCIe USB/PECLK+": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCIe USB/PECLK-": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCIe USB/PETXC+": [
+        "PCIE"
+      ],
+      "/CompactPCI-USB/PCIe USB/PETXC-": [
+        "PCIE"
+      ],
+      "/GND": [
+        "PWR"
+      ],
+      "/PSU1/Isolated Pre-Regulator/+50V_VIN": [
+        "Power"
+      ],
+      "/PSU1/Isolated Pre-Regulator/+VIN_ISO": [
+        "Power"
+      ],
+      "/PSU1/Isolated Pre-Regulator/-VIN_ISO": [
+        "Power"
+      ],
+      "/PSU1/Isolated Pre-Regulator/GND_VIN": [
+        "Power"
+      ],
+      "/PSU1/Isolated Pre-Regulator/HS1": [
+        "Power"
+      ],
+      "/PSU1/Isolated Pre-Regulator/HS2": [
+        "Power"
+      ],
+      "/PSU1/Output Switch/+VOUT": [
+        "PWR_ISO"
+      ],
+      "/PSU1/Output Switch/+VOUT_SW": [
+        "Power"
+      ],
+      "/PSU1/PSU Control/+3V3_ISO_D": [
+        "PWR"
+      ],
+      "/PSU1/PSU Control/+5V_ISO": [
+        "PWR"
+      ],
+      "/PSU1/PSU Control/GND_ISO": [
+        "PWR"
+      ],
+      "/PSU1/PSU1 IO/GND_ISO": [
+        "Power"
+      ],
+      "/PSU1/Post-Regulator/+VIN_ISO": [
+        "PWR_ISO"
+      ],
+      "/PSU1/Post-Regulator/+VOUT": [
+        "Power"
+      ],
+      "/PSU1/Post-Regulator/-5V_ISO": [
+        "PWR"
+      ],
+      "/PSU1/Post-Regulator/-VIN_ISO": [
+        "PWR_ISO"
+      ],
+      "/PSU1/Post-Regulator/-VOUT": [
+        "Power"
+      ],
+      "/PSU1/Pre-Regulator/+50V_VIN": [
+        "PWR_ISO"
+      ],
+      "/PSU1/Pre-Regulator/+VIN_ISO": [
+        "Power"
+      ],
+      "/PSU1/Pre-Regulator/-VIN_ISO": [
+        "PWR_ISO"
+      ],
+      "/PSU1/Pre-Regulator/GND_VIN": [
+        "PWR_ISO"
+      ],
+      "/PSU1/Pre-Regulator/HS1": [
+        "PWR_ISO"
+      ],
+      "/PSU1/Pre-Regulator/HS2": [
+        "PWR_ISO"
+      ],
+      "/PSU2/Isolated Pre-Regulator/+50V_VIN": [
+        "Power"
+      ],
+      "/PSU2/Isolated Pre-Regulator/+VIN_ISO": [
+        "Power"
+      ],
+      "/PSU2/Isolated Pre-Regulator/-VIN_ISO": [
+        "Power"
+      ],
+      "/PSU2/Isolated Pre-Regulator/GND_VIN": [
+        "Power"
+      ],
+      "/PSU2/Isolated Pre-Regulator/HS1": [
+        "Power"
+      ],
+      "/PSU2/Isolated Pre-Regulator/HS2": [
+        "Power"
+      ],
+      "/PSU2/Output Switch/+VOUT": [
+        "PWR_ISO"
+      ],
+      "/PSU2/Output Switch/+VOUT_SW": [
+        "Power"
+      ],
+      "/PSU2/PSU Control/+3V3_ISO_D": [
+        "PWR"
+      ],
+      "/PSU2/PSU Control/+5V_ISO": [
+        "PWR"
+      ],
+      "/PSU2/PSU Control/GND_ISO": [
+        "PWR"
+      ],
+      "/PSU2/PSU1 IO/GND_ISO": [
+        "Power"
+      ],
+      "/PSU2/Post-Regulator/+VIN_ISO": [
+        "PWR_ISO"
+      ],
+      "/PSU2/Post-Regulator/+VOUT": [
+        "Power"
+      ],
+      "/PSU2/Post-Regulator/-5V_ISO": [
+        "PWR"
+      ],
+      "/PSU2/Post-Regulator/-VIN_ISO": [
+        "PWR_ISO"
+      ],
+      "/PSU2/Post-Regulator/-VOUT": [
+        "Power"
+      ],
+      "/PSU2/Pre-Regulator/+50V_VIN": [
+        "PWR_ISO"
+      ],
+      "/PSU2/Pre-Regulator/+VIN_ISO": [
+        "Power"
+      ],
+      "/PSU2/Pre-Regulator/-VIN_ISO": [
+        "PWR_ISO"
+      ],
+      "/PSU2/Pre-Regulator/GND_VIN": [
+        "PWR_ISO"
+      ],
+      "/PSU2/Pre-Regulator/HS1": [
+        "PWR_ISO"
+      ],
+      "/PSU2/Pre-Regulator/HS2": [
+        "PWR_ISO"
+      ],
+      "/PSU_In/+50V_VIN": [
+        "Power"
+      ],
+      "/PSU_In/+VIN": [
+        "Power"
+      ],
+      "/PSU_In/-VIN": [
+        "Power"
+      ],
+      "/PSU_In/GND_VIN": [
+        "Power"
+      ],
+      "/Power IN/+50V_VIN": [
+        "PWR_ISO"
+      ],
+      "/Power IN/+VIN": [
+        "Power"
+      ],
+      "/Power IN/-VIN": [
+        "Power"
+      ],
+      "/Power IN/GND_VIN": [
+        "PWR_ISO"
+      ],
+      "/USB_2_D+": [
+        "USB"
+      ],
+      "/USB_2_D-": [
+        "USB"
+      ],
+      "/USB_2_P_D+": [
+        "USB"
+      ],
+      "/USB_2_P_D-": [
+        "USB"
+      ],
+      "/USB_2_S_D+": [
+        "USB"
+      ],
+      "/USB_2_S_D-": [
+        "USB"
+      ],
+      "/V1+": [
+        "PWR_ISO"
+      ],
+      "/V1-": [
+        "PWR",
+        "PWR_ISO"
+      ],
+      "/V2+": [
+        "PWR_ISO"
+      ],
+      "/V2-": [
+        "PWR",
+        "PWR_ISO"
+      ],
+      "/Vin+": [
+        "PWR_ISO"
+      ],
+      "/Vin-": [
+        "PWR_ISO"
+      ],
+      "Net-(C116-Pad1)": [
+        "PWR_ISO"
+      ],
+      "Net-(C116-Pad2)": [
+        "PWR_ISO"
+      ],
+      "Net-(C127-Pad2)": [
+        "Power"
+      ],
+      "Net-(C166-Pad2)": [
+        "PWR_ISO"
+      ],
+      "Net-(C244-Pad2)": [
+        "PWR_ISO"
+      ],
+      "Net-(C4-Pad1)": [
+        "Power"
+      ],
+      "Net-(C4-Pad2)": [
+        "Power"
+      ],
+      "Net-(C49-Pad2)": [
+        "Power"
+      ],
+      "Net-(D1-PadC)": [
+        "Power"
+      ],
+      "Net-(D15-PadA)": [
+        "PWR_ISO"
+      ],
+      "Net-(D15-PadC)": [
+        "PWR_ISO"
+      ],
+      "Net-(D16-PadA)": [
+        "PWR_ISO"
+      ],
+      "Net-(D16-PadC)": [
+        "PWR_ISO"
+      ],
+      "Net-(D19-PadA)": [
+        "PWR_ISO"
+      ],
+      "Net-(D19-PadC)": [
+        "PWR_ISO"
+      ],
+      "Net-(D20-PadA)": [
+        "PWR_ISO"
+      ],
+      "Net-(D20-PadC)": [
+        "PWR_ISO"
+      ],
+      "Net-(D3-PadA)": [
+        "PWR_ISO"
+      ],
+      "Net-(D3-PadC)": [
+        "PWR_ISO"
+      ],
+      "Net-(D36-PadA)": [
+        "Power"
+      ],
+      "Net-(D36-PadC)": [
+        "Power"
+      ],
+      "Net-(D37-PadA)": [
+        "Power"
+      ],
+      "Net-(D4-PadA)": [
+        "PWR_ISO"
+      ],
+      "Net-(D4-PadC)": [
+        "PWR_ISO"
+      ],
+      "Net-(D5-PadA)": [
+        "PWR_ISO"
+      ],
+      "Net-(D6-PadA)": [
+        "PWR_ISO"
+      ],
+      "Net-(Q1-S-Pad1)": [
+        "Power"
+      ],
+      "Net-(Q10-S-Pad1)": [
+        "PWR_ISO"
+      ],
+      "Net-(Q13-S-Pad1)": [
+        "Power"
+      ],
+      "Net-(Q5-G)": [
+        "PWR_ISO"
+      ],
+      "Net-(Q6-S-Pad1)": [
+        "PWR_ISO"
+      ],
+      "Net-(Q9-G)": [
+        "PWR_ISO"
+      ],
+      "Net-(U20-ANODE)": [
+        "PWR_ISO"
+      ],
+      "Net-(U27-VISO)": [
+        "PWR"
+      ],
+      "Net-(U3-ANODE)": [
+        "Power"
+      ],
+      "Net-(U52-VISO)": [
+        "PWR"
+      ],
+      "unconnected-(D1-PadA)": [
+        "Power"
+      ],
+      "unconnected-(D4-PadA)": [
+        "Power"
+      ],
+      "unconnected-(L18-Pad1)": [
+        "PWR_ISO"
+      ],
+      "unconnected-(L19-Pad1)": [
+        "PWR_ISO"
+      ],
+      "unconnected-(R270-Pad1)": [
+        "PWR_ISO"
+      ],
+      "unconnected-(R286-Pad1)": [
+        "PWR_ISO"
+      ],
+      "unconnected-(T1-Pad2)": [
+        "PWR_ISO"
+      ],
+      "unconnected-(T1-Pad5)": [
+        "PWR_ISO"
+      ],
+      "unconnected-(T2-Pad2)": [
+        "PWR_ISO"
+      ],
+      "unconnected-(T2-Pad5)": [
+        "PWR_ISO"
+      ]
     },
     "netclass_patterns": [
       {
@@ -732,7 +1028,7 @@
       "idf": "",
       "netlist": "",
       "plot": "../prod/",
-      "pos_files": "../",
+      "pos_files": "../prod/",
       "specctra_dsn": "",
       "step": "../../mech-cq2/cq2-heatsink/cq2-00.step",
       "svg": "",
@@ -892,6 +1188,7 @@
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": false,
       "sort_field": "Value2"
@@ -935,6 +1232,7 @@
     },
     "page_layout_descr_file": "${KICAD_USER_TEMPLATE_DIR}/ekf-page-template.kicad_wks",
     "plot_directory": "../prod/",
+    "space_save_all_events": true,
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
